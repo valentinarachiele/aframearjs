@@ -7,7 +7,6 @@
   </head>
   <body>
     <a-scene>
-      <!--aggiungo un asset in modo da tenere pronta l'immagine di texture-->
         <a-assets>
             <img id="marmorizzato" src="img/marbled.jpg">
             <a-mixin id="blu" material="color: #1191B4" scale="0.5 0.5 0.5"></a-mixin>
@@ -15,8 +14,6 @@
 
         <a-box mixin="blu" position="-2 4 -7" rotation="0 160 160"></a-box>
         <a-box src="#marmorizzato" position="0 2 -5" rotation="0 60 60" scale="2 2 2"></a-box>
-         <!-- <a-box src="img/marbled.jpg" position="0 2 -5" rotation="0 60 60" scale="2 2 2"></a-box> -->
-         <!--aggiungo una texture alla box-->
-    </a-scene> <!--imposto la scena che conterrà tutto-->
+    </a-scene>
   </body>
 </html>
