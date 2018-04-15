@@ -11,3 +11,5 @@ Raccolta di snippet di codice relativi ad A-Frame e AR.js. Usati in accoppiata, 
 - **04-mix** uso dei _mixin_
 - **05** aggiunta di `<a-sky>` e `<a-plane>`
 - **05-bis** uso di un preset per creare un _environment_ (libreria https://github.com/feiss/aframe-environment-component/)
+- **06** uso di luci (ambientale e punto)
+- **07** aggiunta di modello 3D GLTF negli _assets_ e nella scena
