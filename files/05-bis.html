@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Environment</title>
+    <script src="aframe.min.js"></script> <!--includo lo script di A-Frame-->
+    <script src="aframe-environment-component-master/dist/aframe-environment-component.js"></script> <!--includo lo script per l'environment-->
+  </head>
+  <body>
+    <a-scene>
+      <!--aggiungo un asset in modo da tenere pronta l'immagine di texture-->
+        <a-assets>
+            <img id="marmorizzato" src="img/marbled.jpg">
+        </a-assets>
+
+        <a-box src="#marmorizzato" position="0 2 -5" rotation="0 60 60" scale="2 2 2"></a-box>
+         <!-- <a-box src="img/marbled.jpg" position="0 2 -5" rotation="0 60 60" scale="2 2 2"></a-box> -->
+         <!--aggiungo una texture alla box-->
+        <!-- <a-plane rotation="-90 0 0" width="20" height="20" color="#ccc"></a-plane> -->
+        <a-sky color="#CCFBEF"></a-sky> <!--aggiungo l'environment-->
+        <a-entity environment="preset: poison"></a-entity>
+    </a-scene> <!--imposto la scena che conterrà tutto-->
+  </body>
+</html>

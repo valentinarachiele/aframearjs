@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Multiple animations</title>
+    <script src="aframe.min.js"></script> <!--includo lo script di A-Frame-->
+  </head>
+  <body>
+      <a-scene>
+
+          <a-sphere radius="0.3" position="0 0 -4" color="grey"><!--aggiungo una sfera-->
+            <a-animation
+              attribute="color" from="yellow" to="green"
+              duration="3000"
+              repeat="indefinite"
+              direction="alternate">
+            </a-animation>
+            <a-animation
+              attribute="position" from="0 0 -4" to="0 3 -4"
+              duration="3000">
+            </a-animation>
+            <a-animation
+              attribute="position" from="0 3 -4" to="3 3 -4"
+              duration="3000"
+              begin="3000">
+            </a-animation>
+          </a-sphere>
+          <a-sky color="#CCFBEF"></a-sky> <!--aggiungo l'environment-->
+
+      </a-scene> <!--imposto la scena che conterrà tutto-->
+  </body>
+</html>

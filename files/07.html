@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>3D models</title>
+    <script src="aframe.min.js"></script> <!--includo lo script di A-Frame-->
+    <script src="aframe-environment-component-master/dist/aframe-environment-component.js"></script>
+  </head>
+  <body>
+      <a-scene>
+        <!--aggiungo un asset in modo da tenere pronta l'immagine di texture-->
+          <a-assets>
+              <img id="marmorizzato" src="img/marbled.jpg">
+              <a-asset-item id="heart" src="object/heart_animated/scene.gltf"></a-asset-item>
+          </a-assets>
+
+          <a-entity gltf-model="#heart" scale="0.02 0.02 0.02" position="0 5 -5"></a-entity>
+
+          <a-entity environment="preset: poison;"></a-entity>
+
+          <a-plane rotation="-90 0 0" width="20" height="20" color="#ccc"></a-plane>
+          <a-sky color="#CCFBEF"></a-sky> <!--aggiungo l'environment-->
+
+        <a-light type="ambient" color="#CC7B19"></a-light> <!--luce ambientale-->
+        <a-light type="point" intensity="1" position="-3 4 4"></a-light> <!--punto luce-->
+      </a-scene> <!--imposto la scena che conterrà tutto-->
+  </body>
+</html>

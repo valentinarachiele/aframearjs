@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Infinite rotation</title>
+    <script src="aframe.min.js"></script> <!--includo lo script di A-Frame-->
+  </head>
+  <body>
+      <a-scene>
+
+          <a-box position="-1 3 -4" color="grey" rotation="0 0 0">
+            <a-animation
+              attribute="rotation"
+              easing="linear"
+              to="0 360 0"
+              duration="3000"
+              repeat="indefinite">
+            </a-animation><!--aggiungo l'animazione-->
+          </a-box>
+
+          <a-sky color="#CCFBEF"></a-sky> <!--aggiungo l'environment-->
+
+        <a-light type="ambient" color="#CC7B19"></a-light> <!--luce ambientale-->
+        <a-light type="point" intensity="1" position="-3 4 4"></a-light> <!--punto luce-->
+      </a-scene> <!--imposto la scena che conterrà tutto-->
+  </body>
+</html>

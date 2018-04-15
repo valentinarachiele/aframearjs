@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AR 03 - Custom marker</title>
+    <script src="aframe.min.js"></script>
+    <script src="AR.js-master/aframe/build/aframe-ar.js"></script>
+    <!--includo i due script di AR.js-->
+  </head>
+  <body>
+    <a-scene embedded arjs><!--aggiungo AR nella scena  stats-->
+
+      <a-sphere position="0 0.5 0" color="tomato" scale="0.3 0.3 0.3"></a-sphere>
+
+		<a-marker-camera type='pattern' url='marker/pattern-marker.patt'></a-marker-camera>
+	</a-scene>
+  </body>
+</html>

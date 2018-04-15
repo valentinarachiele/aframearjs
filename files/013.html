@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cursor interaction 2</title>
+    <script src="aframe.min.js"></script> <!--includo lo script di A-Frame-->
+    <script src="aframe-event-set-component.min.js"></script>
+  </head>
+  <body>
+      <a-scene>
+
+          <a-camera>
+              <a-cursor color="#333" position="0 0 1"></a-cursor>
+          </a-camera>
+
+          <a-sphere
+          position="-2 0 -3"
+          color="#F78AE0"
+          event-set__enter="_event: mouseenter; color: #6638F0"
+          event-set__leave="_event: mouseleave; color: #F78AE0">
+          </a-sphere>
+
+          <!-- <a-box
+          position="0.5 0 -4"
+          color="#B0F566"
+          rotation="45 45 45"
+          event-set__down="_event: mousedown; scale: 1.2 1.2 1.2"
+          event-set__up="_event: mouseup; scale: .5 .5 .5"
+          event-set__leave="_event: mouseleave; scale: .5 .5 .5">
+          </a-box>
+
+          <a-cone
+          position="3 0 -4"
+          radius-bottom="1"
+          radius-top="0.2"
+          color="#4AF2A1"
+          event-set__enter="_event: mouseenter; _target: #testo; visible: true"
+          event-set__leave="_event: mouseleave; _target: #testo; visible: false">
+              <a-text id="testo"
+              value="Ciao!"
+              align="left"
+              color="#FFF"
+              visible="false"
+              position="0 0.3 0.55"
+              geometry="primitive: plane; width: 2"
+              material="color: #23272C">
+              </a-text>
+          </a-cone> -->
+
+          <a-plane rotation="-90 0 0" width="20" height="20" color="#ccc"></a-plane>
+          <a-sky color="#CCFBEF"></a-sky> <!--aggiungo l'environment-->
+
+        <a-light type="ambient" color="#CC7B19"></a-light> <!--luce ambientale-->
+        <a-light type="point" intensity="1" position="-3 4 4"></a-light> <!--punto luce-->
+      </a-scene> <!--imposto la scena che conterrà tutto-->
+  </body>
+</html>

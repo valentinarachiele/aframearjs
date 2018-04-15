@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sound</title>
+    <script src="aframe.min.js"></script> <!--includo lo script di A-Frame-->
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <audio id="beat" src="sound/heartbeat.mp3"></audio>
+      </a-assets>
+
+      <a-sound src="#beat" autoplay="true" position="0 0 0"></a-sound>
+    </a-scene>
+  </body>
+</html>
