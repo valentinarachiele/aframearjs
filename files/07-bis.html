@@ -4,10 +4,9 @@
     <meta charset="utf-8">
     <title>3D models with MagicaVoxel</title>
     <script src="aframe.min.js"></script>
-    <script src="AR.js-master/aframe/build/aframe-ar.js"></script>
   </head>
   <body>
-      <a-scene embedded arjs>
+      <a-scene>
           <a-assets>
               <a-asset-item id="ciop-obj" src="object/ciop.obj"></a-asset-item>
               <a-asset-item id="ciop-mtl" src="object/ciop.mtl"></a-asset-item>
@@ -15,7 +14,6 @@
 
           <a-obj-model src="#ciop-obj" mtl="#ciop-mtl" scale="0.05 0.05 0.05" position="0 0 0" rotation="270 0 0"></a-obj-model>
 
-          <a-marker-camera preset='hiro'></a-marker-camera>
       </a-scene>
   </body>
 </html>

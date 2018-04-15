@@ -9,14 +9,10 @@
   <body>
     <a-scene embedded arjs><!--aggiungo AR nella scena-->
 
-        <a-anchor hit-testing-enabled='true'>
+      <a-box color="green" position="0 1 0" rotation="0 60 60" scale="0.5 0.5 0.5"></a-box>
 
-          <a-box color="green" position="0 1 0" rotation="0 60 60" scale="0.5 0.5 0.5"></a-box>
+      <a-marker-camera preset='hiro'></a-marker-camera>
 
-        </a-anchor>
-
-        <a-camera-static/>
-
-        </a-scene>
+    </a-scene>
   </body>
 </html>

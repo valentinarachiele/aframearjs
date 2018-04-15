@@ -12,7 +12,8 @@ Raccolta di snippet di codice relativi ad A-Frame e AR.js. Usati in accoppiata, 
 - **05** aggiunta di `<a-sky>` e `<a-plane>`
 - **05-bis** uso di un preset per creare un _environment_ (libreria https://github.com/feiss/aframe-environment-component/)
 - **06** uso di luci (ambientale e punto)
-- **07** aggiunta di modello 3D GLTF negli _assets_ e nella scena
+- **07** aggiunta di modello 3D `gltf` negli _assets_ e nella scena
+- **07-bis** aggiunta di modello 3D `obj` negli _assets_ e nella scena
 - **08** aggiunta del testo
 - **09** animazione di un _entity_
 - **09-bis** rotazione infinita di una _entity_
@@ -24,3 +25,9 @@ Raccolta di snippet di codice relativi ad A-Frame e AR.js. Usati in accoppiata, 
 - **012-bis** usare il _component_ raycaster per interagire con _entity_ specifiche
 - **013** usare le animazioni proprie degli oggetti 3D importati (libreria https://github.com/donmccurdy/aframe-extras, all'interno della quale si trova https://github.com/donmccurdy/aframe-extras/blob/master/src/loaders/animation-mixer.js)
 - **014** usare i suoni
+- **015** combinare suoni e animazioni
+- **016** usare oggetti 3D `ply` ottenuti con MagicaVoxel (https://ephtracy.github.io/), usando la libreria https://github.com/donmccurdy/aframe-extras e lo script https://github.com/donmccurdy/aframe-extras/blob/master/src/loaders/ply-model.js
+---
+- **ar01** aggiunta dello script https://github.com/jeromeetienne/AR.js e uso del marker Hiro per mostrare una `<a-box>`
+- **ar02** uso del marker Hiro per mostrare un modello 3D `ply`
+- **ar03** uso di un marker _custom_
