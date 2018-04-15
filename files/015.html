@@ -4,14 +4,29 @@
     <meta charset="utf-8">
     <title>Sound</title>
     <script src="aframe.min.js"></script> <!--includo lo script di A-Frame-->
+    <script src="aframe-environment-component-master/dist/aframe-environment-component.js"></script>
+    <script src="aframe-extras-master/dist/aframe-extras.js"></script><!--includo lo script per gli extra-->
+    <script src="aframe-extras-master/src/loaders/animation-mixer.js"></script><!--includo lo script per le animazioni-->
   </head>
   <body>
-    <a-scene>
-      <a-assets>
-        <audio id="beat" src="sound/heartbeat.mp3"></audio>
-      </a-assets>
+      <a-scene>
+        <!--aggiungo un asset in modo da tenere pronta l'immagine di texture-->
+          <a-assets>
+            <a-asset-item id="heart" src="object/heart_animated/scene.gltf"></a-asset-item>
+            <audio id="pulse" src="sound/heartbeat.mp3"></audio><!--aggiungo l'asset per l'audio-->
+          </a-assets>
 
-      <a-sound src="#beat" autoplay="true" position="0 0 0"></a-sound>
-    </a-scene>
+          <!-- <a-entity sound="src: #pulse; autoplay: true;" position="0 0 0"></a-entity> -->
+
+          <a-entity gltf-model="#heart" scale="0.03 0.03 0.03" position="0 5 -3" animation-mixer="clip: *" sound="src: #pulse; autoplay: true;"></a-entity>
+
+          <a-entity environment="preset: poison;"></a-entity>
+
+          <!-- <a-plane rotation="-90 0 0" width="20" height="20" color="#ccc"></a-plane> -->
+          <a-sky color="#CCFBEF"></a-sky> <!--aggiungo l'environment-->
+
+        <a-light type="ambient" color="#CC7B19"></a-light> <!--luce ambientale-->
+        <a-light type="point" intensity="1" position="-3 4 4"></a-light> <!--punto luce-->
+      </a-scene> <!--imposto la scena che conterrà tutto-->
   </body>
 </html>

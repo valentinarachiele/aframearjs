@@ -8,23 +8,29 @@
   <body>
       <a-scene>
 
-          <a-sphere radius="0.3" position="0 0 -4" color="grey"><!--aggiungo una sfera-->
+          <a-sphere radius="0.3" position="0 0 -4" color="pink"><!--aggiungo una sfera-->
+            <a-animation
+              attribute="position"
+              from="0 0 -4"
+              to="0 3 -4"
+              duration="2000">
+            </a-animation>
+            <a-animation
+              attribute="position"
+              from="0 3 -4"
+              to="3 3 -4"
+              duration="2000"
+              begin="2000">
+            </a-animation>
             <a-animation
               attribute="color" from="yellow" to="green"
-              duration="3000"
+              duration="2000"
+              delay="4000"
               repeat="indefinite"
               direction="alternate">
             </a-animation>
-            <a-animation
-              attribute="position" from="0 0 -4" to="0 3 -4"
-              duration="3000">
-            </a-animation>
-            <a-animation
-              attribute="position" from="0 3 -4" to="3 3 -4"
-              duration="3000"
-              begin="3000">
-            </a-animation>
           </a-sphere>
+          
           <a-sky color="#CCFBEF"></a-sky> <!--aggiungo l'environment-->
 
       </a-scene> <!--imposto la scena che conterrà tutto-->
