@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Multi markers</title>
+    <script src="aframe.min.js"></script>
+    <script src="AR.js-master/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body>
+      <a-scene embedded arjs="sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+
+		<!-- hiro marker -->
+		<a-marker preset="hiro">
+			<a-sphere radius="0.5" position="0 0.5 0" material="opacity: 0.5; color:green;">
+				<a-box scale="0.3 0.3 0.3">
+					<a-animation attribute="rotation" to="360 0 0" dur="5000" easing="linear" repeat="indefinite"></a-animation>
+				</a-box>
+			</a-sphere>
+		</a-marker>
+
+		<!-- matrix marker -->
+		<a-marker type="barcode" value="5">
+			<a-sphere radius="1" position="0 0.5 0" material="opacity: 0.2; color:blue;">
+				<a-box scale="0.2 0.2 0.2">
+					<a-animation attribute="rotation" to="0 360 0" dur="1000" easing="linear" repeat="indefinite"></a-animation>
+				</a-box>
+			</a-sphere>
+		</a-marker>
+
+		<!-- kanji marker -->
+		<a-marker preset="kanji">
+			<a-sphere radius="1" position="0 0.5 0" material="opacity: 0.7; color:yellow;">
+				<a-box scale="0.5 0.5 0.5">
+					<a-animation attribute="rotation" to="0 0 360" dur="3000" easing="linear" repeat="indefinite"></a-animation>
+				</a-box>
+			</a-sphere>
+		</a-marker>
+
+		<a-entity camera></a-entity>
+</a-scene>
+  </body>
+</html>
