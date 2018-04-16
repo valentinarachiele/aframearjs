@@ -31,3 +31,4 @@ Raccolta di snippet di codice relativi ad A-Frame e AR.js. Usati in accoppiata, 
 - **ar01** aggiunta dello script https://github.com/jeromeetienne/AR.js e uso del marker Hiro per mostrare una `<a-box>`
 - **ar02** uso del marker Hiro per mostrare un modello 3D `ply`
 - **ar03** uso di un marker _custom_
+- **ar04** uso di _multiple marker_ (hiro, kanji, barcode)
