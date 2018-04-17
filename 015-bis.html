@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sound</title>
+    <script src="aframe.min.js"></script>
+    <script src="aframe-event-set-component.min.js"></script>
+  </head>
+  <body>
+      <a-scene>
+          <a-assets>
+            <audio id="pulse" src="sound/heartbeat.mp3"></audio>
+          </a-assets>
+
+          <a-camera>
+              <a-cursor color="#333" position="0 0 1"></a-cursor>
+          </a-camera>
+
+          <a-box
+            color="yellow"
+            scale="1 1 1"
+            position="0 1 -3"
+            event-set__mouseenter="material.color: red"
+            event-set__mouseleave="material.color: yellow"
+            sound="on: click; src: #pulse">
+          </a-entity>
+      </a-scene>
+  </body>
+</html>
