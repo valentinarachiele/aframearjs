@@ -26,6 +26,7 @@ Raccolta di snippet di codice relativi ad A-Frame e AR.js. Usati in accoppiata, 
 - **013** usare le animazioni proprie degli oggetti 3D importati (libreria https://github.com/donmccurdy/aframe-extras, all'interno della quale si trova https://github.com/donmccurdy/aframe-extras/blob/master/src/loaders/animation-mixer.js)
 - **014** usare i suoni
 - **015** combinare suoni e animazioni
+- **015-bis** combinare suoni e interazione
 - **016** usare oggetti 3D `ply` ottenuti con MagicaVoxel (https://ephtracy.github.io/), usando la libreria https://github.com/donmccurdy/aframe-extras e lo script https://github.com/donmccurdy/aframe-extras/blob/master/src/loaders/ply-model.js
 ---
 - **ar01** aggiunta dello script https://github.com/jeromeetienne/AR.js e uso del marker Hiro per mostrare una `<a-box>`
