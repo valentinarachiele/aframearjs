@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AR cursor interaction</title>
+    <script src="aframe.min.js"></script>
+    <script src="aframe-event-set-component.min.js"></script>
+    <script src="AR.js-master/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body>
+    <a-scene embedded arjs>
+
+    <a-box scale="0.3 0.3 0.3"
+           position="0 0 0"
+           rotation="120 120 120"
+           color="skyblue"
+           event-set__mouseenter="material.color: yellowgreen; scale: 0.8 0.8 0.8"
+           event-set__mouseleave="material.color: skyblue; scale: 0.3 0.3 0.3"
+           event-set__mousedown="rotation: 60 60 60"
+           event-set__mouseup="rotation: 120 120 120">
+    </a-box>
+
+    <a-marker-camera preset="hiro" cursor="rayOrigin: mouse"> </a-marker-camera>
+
+  </a-scene>
+  </body>
+</html>
