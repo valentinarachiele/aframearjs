@@ -33,3 +33,4 @@ Raccolta di snippet di codice relativi ad A-Frame e AR.js. Usati in accoppiata, 
 - **ar02** uso del marker Hiro per mostrare un modello 3D `ply`
 - **ar03** uso di un marker _custom_
 - **ar04** uso di _multiple marker_ (hiro, kanji, barcode)
+- **ar05** uso di _event component_ (libreria https://github.com/ngokevin/kframe/tree/master/components/event-set/) per interagire con il marker
